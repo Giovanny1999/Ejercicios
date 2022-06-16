@@ -11,13 +11,17 @@ package ejercicio3;
  */
 
 
+import java.lang.reflect.Array;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.Locale;
 
@@ -75,6 +79,8 @@ public class Agenda {
                if(mes<0|| (mes == 0 && dia<0)){
                 año--;
             }
+               
+               
                System.out.println("idEmpleado " + lista.get(i).getId() + " Nombre: " + lista.get(i).getNombre() + 
                        lista.get(i).getApellidop() + lista.get(i).getApellidoM() + " Edad: " + año);
             

@@ -23,7 +23,8 @@ public class Ejercicio3 {
     public static void main(String[] args){
           System.out.println("1. Registrar Empleado");
            System.out.println("2. Buscar Empleado");
-           System.out.println("2.Salir");
+           System.out.println("3. Obtener lista");
+               System.out.println("4.Salir");
            System.out.println("Ingrese un numero");
         Scanner s = new Scanner(System.in);
         Scanner id = new Scanner(System.in);
@@ -61,10 +62,11 @@ public class Ejercicio3 {
                    a.obtenerLista();
                    break;
            }
-       while(valor!=0){
+       while(valor!=4){
            System.out.println("1. Registrar Empleado");
-           System.out.println("2. Buscar Empleado");
-           System.out.println("2. Salir");
+           System.out.println("2. Obtener edad mediante id");
+           System.out.println("3. Obtener lista");
+           System.out.println("4. Sair");
            System.out.println("Ingrese un numero");
            valor = s.nextInt();
            
@@ -92,6 +94,8 @@ public class Ejercicio3 {
                case 3:
                    a.obtenerLista();
                    break;
+                   
+               
            }
        }
        
